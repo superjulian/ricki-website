@@ -167,3 +167,29 @@ table {
 h2 {
   font-weight: bold;
 }
+
+.masonry-gallery-demo {
+  color: red;
+  margin: 0 auto;
+
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .grid-sizer,
+  .gallery-item {
+    width: 33.33%;
+  }
+
+  .gallery-item {
+    float: left;
+    margin-bottom: 10px;
+  }
+
+  .gallery-item img {
+    display: block;
+    max-width: 100%;
+  }
+}
